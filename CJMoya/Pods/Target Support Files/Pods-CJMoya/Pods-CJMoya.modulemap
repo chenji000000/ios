@@ -1,0 +1,6 @@
+framework module Pods_CJMoya {
+  umbrella header "Pods-CJMoya-umbrella.h"
+
+  export *
+  module * { export * }
+}
