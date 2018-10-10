@@ -12,4 +12,5 @@ Design patterns are reusable solutions to common problems in software design. Th
 ```
 
 ###项目：CJMoya
-学习Moya
+学习Moya,协议TargetType中包含baseURL,path等
+Codable,若服务器返回的数据不全，解析的时候设置默认值，参照CleanJSON.swift
