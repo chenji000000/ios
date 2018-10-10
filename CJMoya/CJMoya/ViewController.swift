@@ -22,10 +22,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.view.addSubview(self.tableView)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        configView()
-        
+    fileprivate func loadData() {
         DouBanProvider.request(.channels) { (result) in
             if case let .success(response) = result {
                 
@@ -35,6 +32,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
             }
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configView()
+        loadData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
