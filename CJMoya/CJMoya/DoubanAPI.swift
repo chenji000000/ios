@@ -9,7 +9,10 @@
 import Foundation
 import Moya
 
-let DouBanProvider = MoyaProvider<DouBan>()
+protocol MoyaAddable {
+    var isShowHud: Bool { get }
+    var isOpenLog: Bool { get }
+}
 
 public enum DouBan {
     case channels //获取频道列表
@@ -17,7 +20,21 @@ public enum DouBan {
 }
 
 //请求配置
-extension DouBan: TargetType {
+extension DouBan: TargetType, MoyaAddable {
+    
+    //MoyaAddable
+    var isShowHud: Bool {
+        return true
+    }
+    var isOpenLog: Bool {
+        #if DEBUG
+        return true
+        #else
+        return false
+        #endif
+    }
+    
+    
     //服务器地址
     public var baseURL: URL {
         switch self {

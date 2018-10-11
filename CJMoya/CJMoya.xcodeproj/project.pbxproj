@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3121A956D494A04597B5133E /* Pods_CJMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25F6153D11F42FC7C43EA56E /* Pods_CJMoya.framework */; };
-		F407CD98216E108D0075B7C3 /* CleanJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F407CD97216E108D0075B7C3 /* CleanJSON.swift */; };
 		F407CD9A216E13F60075B7C3 /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F407CD99216E13F60075B7C3 /* PlaylistModel.swift */; };
+		F447A58E216F266800EC2AE7 /* JSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447A58B216F266800EC2AE7 /* JSONKit.swift */; };
+		F447A58F216F266800EC2AE7 /* CleanJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447A58C216F266800EC2AE7 /* CleanJSON.swift */; };
+		F447A591216F27E700EC2AE7 /* CJNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447A590216F27E700EC2AE7 /* CJNetwork.swift */; };
+		F447A597216F31C800EC2AE7 /* MBProgressHUD+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F447A596216F31C800EC2AE7 /* MBProgressHUD+Addition.m */; };
+		F447A599216F386700EC2AE7 /* CJResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447A598216F386700EC2AE7 /* CJResponse.swift */; };
 		F49D5EEA216DE68200012B20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D5EE9216DE68200012B20 /* AppDelegate.swift */; };
 		F49D5EEC216DE68200012B20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D5EEB216DE68200012B20 /* ViewController.swift */; };
 		F49D5EEF216DE68200012B20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49D5EED216DE68200012B20 /* Main.storyboard */; };
 		F49D5EF1216DE68300012B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49D5EF0216DE68300012B20 /* Assets.xcassets */; };
 		F49D5EF4216DE68300012B20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49D5EF2216DE68300012B20 /* LaunchScreen.storyboard */; };
 		F49D5EFC216DEB0C00012B20 /* DoubanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D5EFB216DEB0C00012B20 /* DoubanAPI.swift */; };
-		F49D5EFE216DF21700012B20 /* JSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D5EFD216DF21700012B20 /* JSONKit.swift */; };
 		F49D5F00216DF2A600012B20 /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49D5EFF216DF2A600012B20 /* ChannelModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +27,14 @@
 		25F6153D11F42FC7C43EA56E /* Pods_CJMoya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CJMoya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AF7C4D95FF7085032164AF /* Pods-CJMoya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMoya.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJMoya/Pods-CJMoya.release.xcconfig"; sourceTree = "<group>"; };
 		4BE193D2E3676C4A7C236BE3 /* Pods-CJMoya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJMoya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJMoya/Pods-CJMoya.debug.xcconfig"; sourceTree = "<group>"; };
-		F407CD97216E108D0075B7C3 /* CleanJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanJSON.swift; sourceTree = "<group>"; };
 		F407CD99216E13F60075B7C3 /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
+		F447A58B216F266800EC2AE7 /* JSONKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKit.swift; sourceTree = "<group>"; };
+		F447A58C216F266800EC2AE7 /* CleanJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanJSON.swift; sourceTree = "<group>"; };
+		F447A590216F27E700EC2AE7 /* CJNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJNetwork.swift; sourceTree = "<group>"; };
+		F447A593216F317900EC2AE7 /* CJMoya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CJMoya-Bridging-Header.h"; sourceTree = "<group>"; };
+		F447A595216F31C800EC2AE7 /* MBProgressHUD+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Addition.h"; sourceTree = "<group>"; };
+		F447A596216F31C800EC2AE7 /* MBProgressHUD+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Addition.m"; sourceTree = "<group>"; };
+		F447A598216F386700EC2AE7 /* CJResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CJResponse.swift; sourceTree = "<group>"; };
 		F49D5EE6216DE68200012B20 /* CJMoya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJMoya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49D5EE9216DE68200012B20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49D5EEB216DE68200012B20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +43,6 @@
 		F49D5EF3216DE68300012B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F49D5EF5216DE68300012B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F49D5EFB216DEB0C00012B20 /* DoubanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubanAPI.swift; sourceTree = "<group>"; };
-		F49D5EFD216DF21700012B20 /* JSONKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONKit.swift; sourceTree = "<group>"; };
 		F49D5EFF216DF2A600012B20 /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +75,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F447A58A216F266800EC2AE7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				F447A58B216F266800EC2AE7 /* JSONKit.swift */,
+				F447A58C216F266800EC2AE7 /* CleanJSON.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F447A58D216F266800EC2AE7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F447A590216F27E700EC2AE7 /* CJNetwork.swift */,
+				F447A598216F386700EC2AE7 /* CJResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F447A592216F30F700EC2AE7 /* UIKit_Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F447A593216F317900EC2AE7 /* CJMoya-Bridging-Header.h */,
+				F447A595216F31C800EC2AE7 /* MBProgressHUD+Addition.h */,
+				F447A596216F31C800EC2AE7 /* MBProgressHUD+Addition.m */,
+			);
+			path = UIKit_Extension;
+			sourceTree = "<group>";
+		};
 		F49D5EDD216DE68200012B20 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +124,9 @@
 		F49D5EE8216DE68200012B20 /* CJMoya */ = {
 			isa = PBXGroup;
 			children = (
+				F447A592216F30F700EC2AE7 /* UIKit_Extension */,
+				F447A58A216F266800EC2AE7 /* JSON */,
+				F447A58D216F266800EC2AE7 /* Network */,
 				F49D5EE9216DE68200012B20 /* AppDelegate.swift */,
 				F49D5EEB216DE68200012B20 /* ViewController.swift */,
 				F49D5EED216DE68200012B20 /* Main.storyboard */,
@@ -95,9 +134,7 @@
 				F49D5EF2216DE68300012B20 /* LaunchScreen.storyboard */,
 				F49D5EF5216DE68300012B20 /* Info.plist */,
 				F49D5EFB216DEB0C00012B20 /* DoubanAPI.swift */,
-				F49D5EFD216DF21700012B20 /* JSONKit.swift */,
 				F49D5EFF216DF2A600012B20 /* ChannelModel.swift */,
-				F407CD97216E108D0075B7C3 /* CleanJSON.swift */,
 				F407CD99216E13F60075B7C3 /* PlaylistModel.swift */,
 			);
 			path = CJMoya;
@@ -137,6 +174,7 @@
 				TargetAttributes = {
 					F49D5EE5216DE68200012B20 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -180,12 +218,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CJMoya/Pods-CJMoya-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
@@ -219,13 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F447A58E216F266800EC2AE7 /* JSONKit.swift in Sources */,
+				F447A599216F386700EC2AE7 /* CJResponse.swift in Sources */,
+				F447A591216F27E700EC2AE7 /* CJNetwork.swift in Sources */,
 				F49D5EEC216DE68200012B20 /* ViewController.swift in Sources */,
-				F407CD98216E108D0075B7C3 /* CleanJSON.swift in Sources */,
 				F407CD9A216E13F60075B7C3 /* PlaylistModel.swift in Sources */,
 				F49D5EFC216DEB0C00012B20 /* DoubanAPI.swift in Sources */,
 				F49D5F00216DF2A600012B20 /* ChannelModel.swift in Sources */,
-				F49D5EFE216DF21700012B20 /* JSONKit.swift in Sources */,
+				F447A58F216F266800EC2AE7 /* CleanJSON.swift in Sources */,
 				F49D5EEA216DE68200012B20 /* AppDelegate.swift in Sources */,
+				F447A597216F31C800EC2AE7 /* MBProgressHUD+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +419,7 @@
 			baseConfigurationReference = 4BE193D2E3676C4A7C236BE3 /* Pods-CJMoya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJMoya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,6 +428,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenji.CJMoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CJMoya/UIKit_Extension/CJMoya-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,6 +440,7 @@
 			baseConfigurationReference = 45AF7C4D95FF7085032164AF /* Pods-CJMoya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CJMoya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -398,6 +449,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenji.CJMoya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CJMoya/UIKit_Extension/CJMoya-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

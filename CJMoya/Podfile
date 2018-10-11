@@ -8,5 +8,8 @@ target 'CJMoya' do
   # Pods for CJMoya
     pod "Alamofire"
     pod "Moya"
+    pod "Kingfisher"
+    pod "MBProgressHUD"
+    pod "MJRefresh"
 
 end

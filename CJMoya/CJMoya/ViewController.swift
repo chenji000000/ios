@@ -23,14 +23,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     fileprivate func loadData() {
-        DouBanProvider.request(.channels) { (result) in
-            if case let .success(response) = result {
-                
-                self.channelModel = response.data.toModel(modelType: ChannelModel.self)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+        
+        CJNetwork().request(DouBan.channels, success: { (data) in
+            self.channelModel = data.toModel(modelType: ChannelModel.self)
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
+            
+        }) { (error) in
+            
         }
     }
     
@@ -60,16 +61,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let channelName = channelModel?.channels[indexPath.row].name
         let channelId = channelModel?.channels[indexPath.row].channelId
         
-        DouBanProvider.request(.playlist(channelId ?? "0")) { (result) in
-            if case let .success(response) = result {
-                let playlist = response.data.toModel(modelType: PlaylistModel.self)
-                let music = playlist?.song[0]
-                let artist = music?.artist ?? ""
-                let title = music?.title ?? ""
-                let message = "歌手：\(String(describing: artist))\n 歌曲：\(String(describing: title))"
-                
-                self.showAlert(title: channelName ?? "未知", message: message)
-            }
+        CJNetwork().request(DouBan.playlist(channelId ?? "0"), success: { (data) in
+            let playlist = data.toModel(modelType: PlaylistModel.self)
+            let music = playlist?.song[0]
+            let artist = music?.artist ?? ""
+            let title = music?.title ?? ""
+            let message = "歌手：\(String(describing: artist))\n 歌曲：\(String(describing: title))"
+            
+            self.showAlert(title: channelName ?? "未知", message: message)
+        }) { (error) in
+            
         }
         
     }
