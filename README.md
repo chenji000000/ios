@@ -15,6 +15,7 @@
 封装network
 学习Moya,协议TargetType中包含baseURL,path等
 Codable,若服务器返回的数据不全，解析的时候设置默认值，参照CleanJSON.swift
+增加RxSwift，响应式编程
 
 Design patterns [1](https://www.raywenderlich.com/477-design-patterns-on-ios-using-swift-part-1-2) [2](https://www.raywenderlich.com/476-design-patterns-on-ios-using-swift-part-2-2)
 
