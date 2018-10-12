@@ -16,6 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let homeController = ViewController()
+        homeController.tabBarItem = UITabBarItem(title: "首页", image: UIImage(named: "home_tabBar_city_normal"), selectedImage: UIImage(named: "home_tabBar_city_selected"))
+        let homeNav = UINavigationController(rootViewController: homeController)
+        
+        let loginController = LoginViewController()
+        loginController.tabBarItem = UITabBarItem(title: "登录", image: UIImage(named: "home_tabBar_city_normal"), selectedImage: UIImage(named: "home_tabBar_city_selected"))
+        let loginNav = UINavigationController(rootViewController: loginController)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [homeNav, loginNav]
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
