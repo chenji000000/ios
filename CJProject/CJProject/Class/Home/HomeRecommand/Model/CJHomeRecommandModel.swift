@@ -402,7 +402,11 @@ struct RecommnedAdvertModel: HandyJSON {
     var position: Int = 0
     var subCover: String?
     var subName: String?
-    var adid:Int = 0
+    var ad_id:Int = 0
+    
+    mutating func mapping(mapper: HelpingMapper) {
+        mapper.specify(property: &ad_id, name: "adid")
+    }
     
 }
 struct AdvertShareData: HandyJSON {

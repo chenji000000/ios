@@ -100,7 +100,7 @@ extension CJHomeRecommandViewModel {
         } else if moduleType == "ad" {
             return CGSize(width: CJScreenWidth, height: 240)
         } else if moduleType == "oneKeyListen" {
-            return CGSize(width: CJScreenWidth, height: 100)
+            return CGSize(width: CJScreenWidth, height: 180)
         } else {
             return .zero
         }

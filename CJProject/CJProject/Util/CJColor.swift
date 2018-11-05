@@ -79,5 +79,17 @@ extension UIColor {
     static var randomColor: UIColor {
         return UIColor(red: CGFloat(arc4random_uniform(256))/255.0, green: CGFloat(arc4random_uniform(256))/255.0, blue: CGFloat(arc4random_uniform(256))/255.0, alpha: 1.0)
     }
+    
+    static var dominantColor: UIColor {
+        return UIColor(red: 242/255.0, green: 77/255.0, blue: 51/255.0, alpha: 1)
+    }
+    
+    static var footerViewColor: UIColor {
+        return UIColor(red: 240/255.0, green: 241/255.0, blue: 244/255.0, alpha: 1)
+    }
+    
+    static var mainColor: UIColor {
+        return UIColor.withHex(hexString: "3388ff")
+    }
 }
 

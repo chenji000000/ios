@@ -18,6 +18,7 @@ target 'CJProject' do
     pod 'SwiftyJSON'
     
     pod 'DNSPageView'
+    pod 'MJRefresh'
 
 
 end
