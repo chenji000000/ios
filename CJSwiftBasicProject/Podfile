@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CJSwiftBasicProject' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CJSwiftBasicProject
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+    # alertview
+    pod 'TYAlertController'
+    # 简单易用的图片无限轮播器
+    pod 'SDCycleScrollView'
+    pod 'MJRefresh'
+    pod 'SDWebImage'
+    pod 'MJExtension'
+    pod 'PKHUD'
+
+  target 'CJSwiftBasicProjectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
